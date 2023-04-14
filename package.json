@@ -1,0 +1,89 @@
+{
+  "name": "course-ai",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@chakra-ui/react": "^2.5.5",
+    "@emotion/react": "^11.0.0",
+    "@emotion/styled": "^11.0.0",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.0.1",
+    "@testing-library/user-event": "^14.1.0",
+    "@types/jest": "^28.1.1",
+    "@types/node": "^12.0.0",
+    "@types/react": "^18.0.9",
+    "@types/react-dom": "^18.0.4",
+    "framer-motion": "^6.2.9",
+    "node-sass": "^8.0.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-icons": "^3.0.0",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.6.3",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
+    "lint:css": "stylelint 'src/**/*.{scss,css}'",
+    "lint:css:fix": "stylelint 'src/**/*.{scss,css}' --fix",
+    "pre-commit": "yarn lint-staged",
+    "pre-push": "yarn test:silent --watchAll=false",
+    "prepare": "husky install",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "eslintConfig": {
+    "extends": "react-app",
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.0.4",
+    "@storybook/addon-interactions": "^7.0.4",
+    "@storybook/addon-links": "^7.0.4",
+    "@storybook/blocks": "^7.0.4",
+    "@storybook/cli": "^7.0.4",
+    "@storybook/preset-create-react-app": "^7.0.4",
+    "@storybook/react": "^7.0.4",
+    "@storybook/react-webpack5": "^7.0.4",
+    "@storybook/testing-library": "^0.0.14-next.2",
+    "babel-plugin-named-exports-order": "^0.0.2",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-storybook": "^0.6.11",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.1",
+    "prettier": "^2.8.7",
+    "prop-types": "^15.8.1",
+    "storybook": "^7.0.4",
+    "webpack": "^5.79.0"
+  }
+}
