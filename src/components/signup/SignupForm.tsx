@@ -2,8 +2,8 @@ import { FaFacebook, FaGoogle, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { Button, Flex, Heading, Stack, Text } from '@chakra-ui/react';
 import { Form, Formik } from 'formik';
 
-import NavLink from '../chakraButton/NavLink';
-import FormikField from '../shared/FormikField';
+import FormikField from '../shared/FormikField/FormikField';
+import NavLink from '../shared/NavLink/NavLink';
 
 interface RegisterFormValues {
   username: string;

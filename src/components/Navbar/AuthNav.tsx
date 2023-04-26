@@ -14,7 +14,7 @@ import {
   useDisclosure,
 } from '@chakra-ui/react';
 
-import NavLink from '../chakraButton/NavLink';
+import NavLink from '../shared/NavLink/NavLink';
 
 const AuthNavBar = (): JSX.Element => {
   const { isOpen, onOpen, onClose } = useDisclosure();

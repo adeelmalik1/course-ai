@@ -35,6 +35,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:silent": "yarn test --silent --maxWorkers=50%",
+    "test:debug": "DEBUG_PRINT_LIMIT=20000 yarn test",
     "eject": "react-scripts eject",
     "lint": "eslint src/",
     "lint:fix": "eslint src/ --fix",
@@ -94,5 +96,13 @@
     "prop-types": "^15.8.1",
     "storybook": "^7.0.4",
     "webpack": "^5.79.0"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "yarn lint:fix"
+    ],
+    "src/**/*.{scss,css}": [
+      "yarn lint:css:fix"
+    ]
   }
 }
