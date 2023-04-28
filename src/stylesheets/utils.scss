@@ -1,0 +1,13 @@
+@use 'sass:math';
+@import 'variables';
+
+@function strip-unit($value) {
+  @return math.div($value, ($value * 0 + 1));
+}
+
+@function rem($pxValue) {
+  $px-value-stripped: strip-unit($pxValue);
+  $base-font-size-stripped: strip-unit($font-size-base);
+
+  @return math.div($px-value-stripped, $base-font-size-stripped) + rem;
+}

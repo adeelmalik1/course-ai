@@ -1,0 +1,113 @@
+:root {
+  /* --------ai GRAY COLORS START------ */
+  // GRAY COLORS
+  --ai-gray-900: #111827;
+  --ai-gray-800: #1f2937;
+  --ai-gray-1000: #30333380;
+  --ai-gray-700: #374151;
+  --ai-gray-750: #3033335e;
+  --ai-gray-600: #4b5563;
+  --ai-gray-500: #6b7280;
+  --ai-gray-400: #9ca3af;
+  --ai-gray-300: #d1d5db;
+  --ai-gray-200: #e6eff0;
+  --ai-gray-220: #d2d6d6;
+  --ai-gray-250: #d9e1e2;
+  --ai-gray-100: #f3f4f6;
+  --ai-gray-050: #f9fafb;
+
+  /* --------ai GRAY COLORS END------ */
+
+  /* --------ai WARM GRAY COLORS START------ */
+  // WARM GRAY COLORS
+  --ai-warm-gray-950: #141414;
+  --ai-warm-gray-900: #272727;
+  --ai-warm-gray-800: #303333;
+  --ai-warm-gray-700: #444;
+  --ai-warm-gray-600: #636363;
+  --ai-warm-gray-500: #808080;
+  --ai-warm-gray-400: #afafaf;
+  --ai-warm-gray-350: #a9a9a9;
+  --ai-warm-gray-300: #dbdbdb;
+  --ai-warm-gray-200: #ebebeb;
+  --ai-warm-gray-100: #fff;
+  --ai-warm-gray-050: #f5f5f5;
+  --ai-warm-gray-040: #e6f8fa;
+  --ai-warm-gray-030: #e1e8eb;
+
+  /* --------ai WARM GRAY COLORS END------ */
+
+  /* ------- ai NEUTRAL COLORS START------------- */
+  // ai NEUTRAL COLOR
+  --ai-neutral-050: #e1e8eb;
+  --ai-neutral-040: #e3e3e3;
+  --ai-neutral-060: #e0e0e0;
+  --ai-neutral-030: #ddd;
+  --ai-neutral-020: #aaa;
+  --ai-neutral-010: #a4b1b3;
+  --ai-neutral-000: #8d9899;
+  --ai-neutral-001: #8d9899;
+  --ai-neutral-transparent-bg: transparent;
+  --ai-neutral-white-bg: #f7fafa;
+  --ai-neutral-default-gray: #aebbbd;
+  --ai-neutral-default-bg: #888;
+  --ai-neutral-states-color: #aebbbd;
+  --ai-neutral-states-color-700: #dce5e6;
+  --ai-neutral-states-color-500: #c4c4c4;
+
+  /* ------- ai NEUTRAL COLORS END------------- */
+
+  /* ------- ai SEGMENT COLORS START------------- */
+  // SEGMENT COLORS
+
+  --ai-segment-blue-900: #1a4298;
+  --ai-segment-blue-100: #f6fbff;
+  --ai-segment-blue-96: #d7e8f5;
+  --ai-segment-blue-800: #3472f7;
+  --ai-segment-blue-700: #3daaed;
+  --ai-segment-blue-600: #1dc7ea;
+  --ai-segment-blue-750: #16adbc;
+  --ai-segment-cyan-900: #17adbc;
+  --ai-segment-cyan-800: #1ca1b7;
+  --ai-segment-cyan-light: #8ad5dd;
+  --ai-segment-cyan-700: #1496a2;
+  --ai-segment-cyan-600: #90d1db;
+  --ai-segment-cyan-500: #c7e8ed;
+  --ai-segment-cyan-300: #f6f9fa;
+  --ai-segment-cyan-400: #fbfdfe;
+
+  /* ------- ai SEGMENT COLORS END------------- */
+
+  /* ------- ai SEMENTIC COLORS START------------- */
+  // SEMANTIC COLORS
+  --ai-semantics-success: #0da931;
+  --ai-semantics-inactive: #dc950e;
+  --ai-semantics-warning: #f7971c;
+  --ai-semantics-error: #f3163e;
+  --ai-semantics-disabled: #d6d6d6;
+  --ai-semantics-danger: #ff4a55;
+  --ai-field-error: #ef476f;
+  --ai-field-error-background: #fff8f9;
+
+  /* ------- ai SEMENTIC COLORS END------------- */
+  // TODO: Adjust color names when added to color scheme
+  // Only used for input component right
+  --color-dark-green: #60e69a;
+  --color-neutral-light-gray: #ccd6de;
+  --color-neutral-cream-white: #f8f9fc;
+  --color-neutral-light-blue-gray: #adb8bf;
+  --ai-neutral-disable-color: #666;
+  --ai-neutral-black-primary: #5e6566;
+  --ai-neutral-dark-black: #2d3030;
+  --ai-neutral-black: #252728;
+  --ai-neutral-black-100: #303333;
+  --ai-neutral-black-10: #898c8c;
+  --ai-transparent-bg: transparent;
+  --ai--success-progress: #54bdc7;
+  --ai--neutral-green-400: #60e69a;
+
+  /* ------- ai MODAL COLORS START------------- */
+  --ai--modal-backdrop: #808080;
+
+  /* ------- ai MODAL COLORS END------------- */
+}

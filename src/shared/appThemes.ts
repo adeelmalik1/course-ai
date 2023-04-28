@@ -5,11 +5,11 @@ export const appTheme = extendTheme({
       variants: {
         primary: {
           bg: 'green.800',
-          color: 'white',
+          color: '#f7fafc',
         },
         danger: {
           bg: 'red.500',
-          color: 'white',
+          color: '#f7fafc',
         },
         outline: {
           bg: 'red.500',

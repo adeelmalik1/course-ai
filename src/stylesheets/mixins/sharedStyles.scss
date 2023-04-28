@@ -1,0 +1,7 @@
+.inputBackgroundColor {
+  background-color: var(--ir-neutral-white-bg);
+
+  &:focus {
+    background-color: var(--ir-neutral-white-bg);
+  }
+}
