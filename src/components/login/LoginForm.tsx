@@ -1,9 +1,12 @@
 import { FaFacebook, FaGoogle, FaInstagram, FaLinkedin } from 'react-icons/fa';
-import { Button, Flex, Heading, Stack, Text } from '@chakra-ui/react';
+import { Flex, Heading, Stack, Text } from '@chakra-ui/react';
 import { Form, Formik } from 'formik';
 
+import CustomButton from '../shared/chakraButton/ChakraButton';
 import FormikField from '../shared/FormikField/FormikField';
 import NavLink from '../shared/NavLink/NavLink';
+
+import s from './LoginForm.module.scss';
 
 interface LoginFormValues {
   username: string;
@@ -17,71 +20,40 @@ const LoginForm = (): JSX.Element => {
   };
 
   return (
-    <Flex align="center" justify="center" h="100vh" bg="#F7FAFC" w="100vw" px={4}>
-      <Flex direction="column" p={12} rounded="2xl" bg="white" w="100%" maxW="500px" boxShadow="lg">
-        <Heading mb={6} textAlign={'center'} pt={8}>
-          Login
-        </Heading>
+    <Flex className={s.loginContainer}>
+      <Flex className={s.loginflex}>
+        <Heading className={s.login_text}>Login</Heading>
         <Formik initialValues={initialValues} onSubmit={() => console.log('submitted')}>
           {({ isSubmitting }) => (
-            <Form>
-              <FormikField name="username" label="Username" type="text" />
+            <Form className={s.form_container}>
+              <FormikField name="email" label="Email" type="text" />
               <FormikField name="password" label="Password" type="password" />
-              <Flex justifyContent={'space-between'} mt={4}>
-                <Text mr={2}>Don't have an account?</Text>
-                <NavLink href="/signup" color="teal">
-                  Register ?
-                </NavLink>
-              </Flex>
-              <Stack mt={6} direction="row" justify="center">
-                <Flex
-                  justify="center"
-                  align="center"
-                  cursor={'pointer'}
-                  w="12"
-                  h="12"
-                  bg="white"
-                  borderRadius="full"
-                  boxShadow="md"
-                  mr={4}
-                >
-                  <FaGoogle color="#DB4437" size={20} />
-                </Flex>
-                <Flex
-                  justify="center"
-                  align="center"
-                  cursor={'pointer'}
-                  w="12"
-                  h="12"
-                  bg="white"
-                  borderRadius="full"
-                  boxShadow="md"
-                  mr={4}
-                >
-                  <FaFacebook color="#3B5998" size={20} />
-                </Flex>
-                <Flex
-                  justify="center"
-                  align="center"
-                  cursor={'pointer'}
-                  w="12"
-                  h="12"
-                  bg="white"
-                  borderRadius="full"
-                  boxShadow="md"
-                  mr={4}
-                >
-                  <FaInstagram color="#E1306C" size={20} />
-                </Flex>
-                <Flex justify="center" align="center" w="12" h="12" bg="white" borderRadius="full" boxShadow="md">
-                  <FaLinkedin color="#0E76A8" size={20} cursor={'pointer'} />
-                </Flex>
-              </Stack>
-
-              <Flex justify="center" pb={12}>
-                <Button mt={6} colorScheme="teal" isLoading={isSubmitting} type="submit">
+              <Flex justify="center" pb={5}>
+                <CustomButton variant={'primary'} mt={6} isLoading={isSubmitting} type="submit">
                   Login
-                </Button>
+                </CustomButton>
+              </Flex>
+              <Stack alignItems="center">
+                <Stack className={s._stackContainer}>
+                  <Flex className={s.iconContainer} mt={2}>
+                    <FaGoogle data-testid="social-icon" color="#DB4437" size={20} />
+                  </Flex>
+                  <Flex className={s.iconContainer}>
+                    <FaFacebook data-testid="social-icon" color="#3B5998" size={20} />
+                  </Flex>
+                  <Flex className={s.iconContainer}>
+                    <FaInstagram data-testid="social-icon" color="#E1306C" size={20} />
+                  </Flex>
+                  <Flex className={s.iconContainer}>
+                    <FaLinkedin data-testid="social-icon" color="#0E76A8" size={20} />
+                  </Flex>
+                </Stack>
+              </Stack>
+              <Flex className={s.textContainer}>
+                <Text>Don't have an account yet?</Text>
+                <NavLink fontWeight="bold" href="/signup" color={'blackAlpha.900'}>
+                  Signup
+                </NavLink>
               </Flex>
             </Form>
           )}

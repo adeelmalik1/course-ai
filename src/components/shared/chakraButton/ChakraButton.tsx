@@ -1,9 +1,10 @@
 import { Button, ButtonProps } from '@chakra-ui/react';
+import classNames from 'classnames';
 
-interface Props extends ButtonProps {
-  children: React.ReactNode;
-}
-
-const CustomButton = ({ children, ...props }: Props): JSX.Element => <Button {...props}>{children}</Button>;
+export const CustomButton = ({ children, className, ...props }: ButtonProps): JSX.Element => (
+  <Button {...props} className={classNames(className)}>
+    {children}
+  </Button>
+);
 
 export default CustomButton;

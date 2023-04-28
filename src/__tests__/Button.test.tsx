@@ -1,7 +1,7 @@
 import { fireEvent, screen } from '@testing-library/react';
 
 import CustomButton from '../components/shared/chakraButton/ChakraButton';
-import { render } from '../test-utils';
+import { render } from '../test-utils/render';
 
 describe('CustomButton component', () => {
   const props = {

@@ -1,0 +1,53 @@
+.signupContainer {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: #f7fafc;
+  align-items: center;
+  justify-content: center;
+
+  .signupFlex {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    .signupCardContainer {
+      display: flex;
+      width: 100%;
+      height: 73vh;
+      padding: 0 42px;
+      background: white;
+      flex-direction: column;
+      max-width: 500px;
+      box-shadow: rgb(0 0 0 / 4%) 0 3px 5px;
+      border-radius: 1rem;
+
+      .signupForm {
+        margin: 35px 2px;
+
+        ._stackContainer {
+          flex-direction: row;
+          justify-content: space-around;
+          width: 75%;
+
+          .iconContainer {
+            display: flex;
+            width: 50px;
+            height: 46px;
+            border: 1px solid #e9e9e9;
+            border-radius: 4px;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .textContainer {
+      margin-top: 2rem;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

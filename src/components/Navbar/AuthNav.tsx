@@ -44,10 +44,10 @@ const AuthNavBar = (): JSX.Element => {
           </DrawerContent>
         </Drawer>
         <Text fontSize={'3xl'} fontWeight={'bold'} pl={12} textShadow="1px 1px 2px #000000">
-          <Box as="span" color="#FFFFFF">
+          <Box as="span" color="#000">
             Pin
           </Box>
-          <Box as="span" color="#319795">
+          <Box as="span" color="#e2e8f0">
             kicks
           </Box>
         </Text>
