@@ -1,0 +1,70 @@
+.signupContainer {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: var(--ai-gray-100);
+  align-items: center;
+  justify-content: center;
+
+  .signupFlex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .signupCardContainer {
+      display: flex;
+      width: 100%;
+      height: 65vh;
+      padding: 0 42px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      background: var(--ai-gray-100);
+      flex-direction: column;
+      max-width: 500px;
+      border-radius: 1rem;
+
+      .signupForm {
+        margin: 35px 2px;
+
+        ._stackContainer {
+          flex-direction: row;
+          justify-content: space-around;
+          width: 75%;
+
+          .iconContainer {
+            display: flex;
+            width: 50px;
+            height: 46px;
+            border: 1px solid var(--ai-gray-300);
+            border-radius: 4px;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .textContainer {
+      margin-top: 2rem;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media only screen and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-around;
+
+      .signupCardContainer {
+        height: auto;
+        max-height: 80vh;
+        max-width: 400px;
+      }
+    }
+
+    @media only screen and (min-width: 1024px) {
+      .signupCardContainer {
+        max-width: 500px;
+      }
+    }
+  }
+}

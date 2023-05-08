@@ -1,0 +1,111 @@
+/* --------IR FONT FAMLY------------ */
+$font-family-open-sans: 'Open Sans';
+$font-family-sans-serif: 'sans-serif';
+$font-family-lora: 'Lora';
+
+/* --------IR PADDINGS-------------- */
+$padding-base-vertical: 40px;
+$padding-base-horizontal: 40px;
+$padding-round-vertical: 9px;
+$padding-round-horizontal: 18px;
+$padding-simple-vertical: 8px;
+$padding-simple-horizontal: 18px;
+$padding-large-vertical: 14px;
+$padding-large-horizontal: 30px;
+$padding-small-vertical: 4px;
+$padding-small-horizontal: 8px;
+$padding-xs-vertical: 2px;
+$padding-xs-horizontal: 4px;
+$padding-label-vertical: 2px;
+$padding-label-horizontal: 12px;
+$margin-large-vertical: 30px;
+$margin-base-vertical: 15px;
+$margin-sm-vertical: 8px;
+$padding-base: 8px;
+$padding-zero: 0;
+$padding0: 0;
+
+/* --------IR MARGINS-------------- */
+$margin-bottom: 0 0 10px 0;
+$margin-bottom0: 0;
+
+/* ----------IR LINE-HEIGHT----------- */
+$line-height-general: 1.5;
+
+/* ---------*IR SPAN-------------- */
+$light-gray: #e3e3e3;
+$medium-gray: #ddd;
+$medium-dark-gray: #aaa;
+$dark-gray: #a4b1b3;
+$span-dark-gray: #8d9899;
+$fomr-field-color: #8d9899;
+
+/* --------IR BORDERS-------------- */
+$border-primary: 1px solid #17adbc;
+$border-secondary: 1px solid #aebbbd;
+$border-base: 1px solid #e6eff0;
+$border-card: 1px solid #e1eaeb;
+$border-btn: 1px solid #303333;
+$bordernone: none;
+
+/* --------IR RADIUS-------------- */
+$border-radius-small: 3px;
+$border-radius-base: 4px;
+$border-radius-large: 6px;
+$border-radius-extreme: 24px;
+$btn-round-radius: 30px;
+$border-radius-top: 10px 10px 0 0;
+$border-radius-bottom: 0 0 10px 10px;
+$border-radius-large-top: $border-radius-large $border-radius-large 0 0;
+$border-radius-large-bottom: 0 0 $border-radius-large $border-radius-large;
+
+/* --------IR FONT SIZES-------------- */
+$font-size-base: 14px;
+$font-size-small: 12px;
+$font-size-medium: 16px;
+$font-size-large: 18px;
+$font-size-large-navbar: 20px;
+$font-size-body1: 28px;
+$font-size-body2: 32px;
+$font-size-h1: 52px;
+$font-size-h2: 36px;
+$font-size-h3: 28px;
+$font-size-h4: 22px;
+$font-size-h5: 16px;
+$font-size-h6: 14px;
+$font-paragraph: 14px;
+$font-size-xs: 10px;
+$font-size-xxs: 8px;
+
+/* --------IR FONT WEIGHTS-------------- */
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-semi: 500;
+$font-weight-bold: 600;
+$font-weight-xbold: 700;
+
+/* --------IR STYLES-------------- */
+$over-flow-x: hidden;
+$over-flow-y: scroll;
+
+/* --------IR TRANSITION-------------- */
+$general-transition-time: 300ms;
+$slow-transition-time: 370ms;
+$dropdown-coordinates: 29px -50px;
+$fast-transition-time: 150ms;
+$ultra-fast-transition-time: 100ms;
+$select-coordinates: 50% -40px;
+$transition-linear: linear;
+$ease-activate: linear 0.1s;
+$ease-deactivate: linear 0.2s;
+$transition-ease: ease 0s;
+$transition-ease-in: ease-in;
+$transition-ease-out: ease-out;
+$transition-bezier: cubic-bezier(0.34, 1.61, 0.7, 1);
+
+// Breakpoints
+$screen-mobile-landscape: 502px;
+$screen-mobile-portrait: 375px;
+$screen-tablet: 744px;
+$screen-laptop: 986px;
+$screen-large: 1230px;
